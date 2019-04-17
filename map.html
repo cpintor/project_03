@@ -2,48 +2,56 @@
 <html lang="en">
 
 <head>
-	<meta charset="UTF-8">
-	<title>Project #1</title>
-	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<link rel="stylesheet" type="text/css" href="css/reset.css">
-	<link rel="icon" href="img/logo.png">
+  <meta charset="UTF-8">
+  <title>Project #3</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="css/reset.css">
+  <link rel="stylesheet" type="text/css" href="css/maps.css">
+  <link rel="icon" href="img/logo.png">
 
-	<!-- Google web fonts -->
-	<link href="https://fonts.googleapis.com/css?family=Archivo:400,700" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Montserrat:100,400,700" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Changa" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Baloo+Bhai" rel="stylesheet">
+  <!-- js file-->
+  <script type="text/javascript" src="js/script.js"></script>
+  <!-- Google web fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Archivo:400,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:100,400,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Changa" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Baloo+Bhai" rel="stylesheet">
+
+  <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA-371AuYHT_zzUOp2XVIML3CBTQQM0s_U&callback=initMap">
+    </script>
 </head>
 
 <body>
 
-	<section>
-		<div class="menu">
-			<div id="navbar-container">
-				<ul>
-					<li class="tittle">
-						<h2>☺</h2>
-					</li>
-					<li><a href="index.html" class="underline"><strong>About Me</strong></a></li>
-					<li><a href="resume.html" class="underline">Resume</a></li>
-					<li><a href="photos.html" class="underline">Gallery</a></li>
-					<li><a href="map.html" class="underline">Map</a></li>
-				</ul>
-			</div>
-		</div>
-	</section>
+  <section>
+    <div class="menu">
+        <a class="tittle">☺</a>
+      <div id="navbar-container">
+        <ul>
+          <li><a href="index.html" class="underline"><strong>About Me</strong></a></li>
+          <li><a href="resume.html" class="underline">Resume</a></li>
+          <li><a href="photos.html" class="underline">Gallery</a></li>
+          <li><a href="map.html" class="underline">Map</a></li>
+        </ul>
+      </div>
+    </div>
+  </section>
 
-	<section class="resumeRelative backgroundColor">
-		<div class="">
-			<div class="wrapper">
-				<h2 class="hello">Map</h2>
-				<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA-371AuYHT_zzUOp2XVIML3CBTQQM0s_U&callback=initMap"
-				async defer></script>
-			</div>
-		</div>
-	</section>
-
+  <section class="resumeRelative">
+    <div class="wrapper">
+      <h2 class="hello">Map</h2>
+      <p class="serra">Richard Serra's "East-West/West-East" sculputre in the Qatari Desrt</p>
+      <img src="img/richard_serra.jpg" id="serra">
+      <p class="source"><a href="http://www.asergeev.com/pictures/archives/compress/2014/1509/07.htm" class="underline">Image source</a></p>
+      <p>"'East-West/West-East,' which spans the greatest area of any of Serra’s creations, is yet another grand piece of public art purchased by the Gulf nation. The Qatar Museums Authority is estimated to spend about a billion dollars per year on art. At its head is the young Sheikha al-Mayassa Hamad bin Khalifa al-Thani, a sister of the Emir of Qatar and a Duke University graduate, who was recently named the most powerful person in the art world by ArtReview."</p>
+      <p>- <i>The New Yorker</i></p>
+      <div id="wrapperMap">
+        <div id="map"></div>
+      </div>
+    </div>
+  </section>
 </body>
 
 </html>
