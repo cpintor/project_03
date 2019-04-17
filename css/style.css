@@ -31,13 +31,13 @@
     left: 10%;
 }
 
-.tittle {
+h3.tittle {
 	font-family: 'Changa', sans-serif;
 	font-size: 200%;
 	position: fixed;
 	float: left;
 	left: 7%;
-	top: 0%;
+	top: -8%;
 	color: rgb(38, 0, 255);
 }
 
